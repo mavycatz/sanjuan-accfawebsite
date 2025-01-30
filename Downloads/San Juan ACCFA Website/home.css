@@ -1,0 +1,308 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(45deg, #E0FFFF, #ADD8E6);
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, #87CEEB, #AFEEEE);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    animation: navAnimation 5s ease infinite;
+}
+
+@keyframes navAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav .logo {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+    transform: rotate(360deg);
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #F1F1F1;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+nav .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav .search-container input[type="text"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 1em;
+    width: 200px;
+    outline: none;
+    transition: width 0.3s ease;
+}
+
+nav .search-container input[type="text"]:focus {
+    width: 250px;
+}
+
+nav .search-container button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #4682B4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+nav .search-container button:hover {
+    background-color: #4169E1;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.logo-container .logo {
+    max-width: 50%;
+    height: auto;
+    animation: logoBounce 2s infinite;
+}
+
+@keyframes logoBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 15px;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 10px #87CEEB; }
+    to { text-shadow: 0 0 20px #50E3C2; }
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #000;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+}
+
+.learn-more-btn, .sign-up-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover, .sign-up-btn:hover {
+    background-color: #41729F;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more-btn:active, .sign-up-btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+/* Container for the layout */
+.accfaaboutus {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Accfa hall section */
+.accfahall-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 70%;
+}
+
+/* Individual accfa hall */
+.accfahall {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    opacity: 0.9; /* Slight opacity for a more subtle effect */
+}
+
+/* Hover effect for accfa hall */
+.accfahall:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    opacity: 1; /* Full opacity when hovered */
+}
+
+/* Hover effect for images */
+.accfahall img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+/* Image hover zoom effect */
+.accfahall img:hover {
+    transform: scale(1.05);
+}
+
+/* Heading styles for accfa hall */
+.accfahall h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Paragraph styles for accfa hall */
+.accfahall p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* About Us Section */
+.about-us {
+    width: 30%;
+    padding: 50px;
+    background: linear-gradient(45deg, #e0f7fa, #80deea);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* About Us Hover */
+.about-us:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* About Us Heading */
+.about-us h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* About Us Paragraph */
+.about-us p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4; }
+    100% { text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50; }
+}
