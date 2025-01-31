@@ -10,8 +10,8 @@ body, html {
     background-image: url(images/learn-morebackground.png);
     width: 70%;
     height: 50%;
-background-size: cover;
-background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
@@ -100,12 +100,12 @@ nav .search-container button:hover {
     background-color: #4169E1;
 }
 .Intro-section {
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
-    margin: 0; /* No margin */
-    padding: 0; /* No padding */
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    color: white; /* Text color */
+    color: white;
     font-size: 2rem;
     background-image: url(images/housesgreen.png);
     background-repeat: repeat-x;
@@ -114,38 +114,36 @@ nav .search-container button:hover {
     animation: scrollBackground 10s linear infinite;
 }
     
-    @keyframes scrollBackground {
-        0% {
-            background-position: 0 0;
-        }
-        100% {
-            background-position: -100% 0;
-        }
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
     }
+    100% {
+        background-position: -100% 0;
+    }
+}
 .title {
     font-size: 2.0rem;
     font-weight: bold;
-    color: #2C3E50; /* Darker color */
-    font-family: 'Poppins', sans-serif; /* Poppins font */
+    color: #2C3E50;
+    font-family: 'Poppins', sans-serif;
     text-align: start;
 }
 .subtitle {
     font-size: 1.5rem;
-    color: #2980B9; /* Blue color */
-    font-family: 'Poppins', sans-serif; /* Poppins font */
-    font-weight: 600; /* Thicker text */
+    color: #2980B9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     text-align: start;
-
 }
 .description {
     font-size: 1rem;
-    color: #003366; /* Dark blue color for readability */
+    color: #003366;
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif; /* Poppins font */
-    font-weight: 400; /* Regular thickness */
-    line-height: 1.6; /* Improve readability with more line spacing */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
     text-align: start;
-
 }
 .img-fluid {
     max-width: 100%;
@@ -158,52 +156,49 @@ nav .search-container button:hover {
 }
 .socials {
     display: flex;
-    gap: 15px; /* Space between icons */
+    gap: 15px;
 }
 
 .social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Size of the circle */
-    height: 50px; /* Size of the circle */
-    border-radius: 50%; /* Makes it circular */
-    text-decoration: none; /* Removes underline */
-    color: white; /* Icon color */
-    font-size: 24px; /* Icon size */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Facebook icon style */
 .social-icon:first-child {
-    background-color: #1877f2; /* Facebook blue */
-    box-shadow: 0 0 15px rgba(24, 119, 242, 0.7); /* Glow effect */
+    background-color: #1877f2;
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.7);
 }
 
-/* Email icon style */
 .social-icon:last-child {
-    background-color: #d44638; /* Gmail red */
-    box-shadow: 0 0 15px rgba(212, 70, 56, 0.7); /* Glow effect */
+    background-color: #d44638;
+    box-shadow: 0 0 15px rgba(212, 70, 56, 0.7);
 }
 
-/* Hover effects */
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.9); /* Stronger glow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.9);
 }
 
 .social-icon:first-child:hover {
-    box-shadow: 0 0 20px rgba(24, 119, 242, 0.9); /* Facebook glow on hover */
+    box-shadow: 0 0 20px rgba(24, 119, 242, 0.9);
 }
 
 .social-icon:last-child:hover {
-    box-shadow: 0 0 20px rgba(212, 70, 56, 0.9); /* Email glow on hover */
+    box-shadow: 0 0 20px rgba(212, 70, 56, 0.9);
 }
 .About-us {
     position: relative;
     z-index: 2;
-    background: #fff; /* Ensure About Us has its own clean background */
+    background: #fff;
 }
 .About-us h1 {
     font-size: 2.0rem;
@@ -222,8 +217,8 @@ nav .search-container button:hover {
     transform: translateX(-50%);
     width: 50%;
     height: 3px;
-    background-color: #87CEEB; /* Blue color for the glow line */
-    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7); /* Glow effect */
+    background-color: #87CEEB;
+    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7);
 }
 .About-us h2 {
     font-size: 2.0rem;
@@ -241,8 +236,8 @@ nav .search-container button:hover {
     transform: translateX(-50%);
     width: 50%;
     height: 3px;
-    background-color: #87CEEB; /* Blue color for the glow line */
-    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7); /* Glow effect */
+    background-color: #87CEEB;
+    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7);
 }
 .About-us p {
     font-size: 1rem;
@@ -256,21 +251,21 @@ nav .search-container button:hover {
 .About-us h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2C3E50; /* Darker color for better contrast */
-    margin-bottom: 20px; /* Add space below the heading */
+    color: #2C3E50;
+    margin-bottom: 20px;
 }
 
 .About-us h2 {
     font-size: 2rem;
-    color: #2980B9; /* Blue color for a more vibrant look */
-    margin-bottom: 15px; /* Add space below the subheading */
+    color: #2980B9;
+    margin-bottom: 15px;
 }
 
 .About-us p {
-    font-size: 1.1rem; /* Slightly larger text for readability */
-    color: #555; /* Darker gray for better contrast */
+    font-size: 1.1rem;
+    color: #555;
     margin-top: 20px;
-    line-height: 1.6; /* Improve readability with more line spacing */
+    line-height: 1.6;
 }
 .socials2 {
     align-items: center;
@@ -313,16 +308,16 @@ nav .search-container button:hover {
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    border: 1px solid #ddd;
     background: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial:hover {
-    transform: translateY(-10px); /* Lift up on hover */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial p {
@@ -338,10 +333,10 @@ nav .search-container button:hover {
 
 .testimonials-row {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to keep cards in a single row */
-    overflow-x: auto; /* Enable horizontal scrolling if cards overflow */
-    gap: 15px; /* Add spacing between cards */
-    padding-bottom: 20px; /* Add padding to accommodate scrollbar */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 20px;
 }
 
 .testimonial-card {
@@ -349,11 +344,11 @@ nav .search-container button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: rgba(128, 128, 128, 0.5); /* Grey color with opacity */
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px); /* Add a hover effect */
+    transform: translateY(-10px);
 }
 
 .testimonial-icon {
