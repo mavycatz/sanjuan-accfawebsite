@@ -1,0 +1,12 @@
+.About-us {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Cover full width */
+    min-height: 100vh; /* Cover full viewport height */
+    display: flex; /* Use Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: fixed;
+    top: 10px; /* Adjust this value to move the section higher */
+}

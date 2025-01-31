@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(45deg, #E0FFFF, #ADD8E6);
+    background-image: url(images/bg.png);
     animation: backgroundAnimation 10s ease infinite;
 }
 
@@ -257,52 +257,3 @@ nav .search-container button:hover {
     font-weight: 400;
 }
 
-/* About Us Section */
-.about-us {
-    width: 30%;
-    padding: 50px;
-    background: linear-gradient(45deg, #e0f7fa, #80deea);
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* About Us Hover */
-.about-us:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* About Us Heading */
-.about-us h2 {
-    font-family: 'Arial', sans-serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #000;
-    animation: textGlow 1.5s ease-in-out infinite alternate;
-}
-
-/* About Us Paragraph */
-.about-us p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: 400;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes textGlow {
-    0% { text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4; }
-    100% { text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50; }
-}

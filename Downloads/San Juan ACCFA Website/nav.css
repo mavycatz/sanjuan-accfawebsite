@@ -9,8 +9,7 @@ nav {
     position: relative;
     width: 100%;
     height: 50px;
-    background: #007BFF;
-    background: linear-gradient(45deg, #007BFF, #00BFFF);
+    background: linear-gradient(45deg, #FFFFFF, #99CCFF);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -119,5 +118,6 @@ nav a:nth-child(3):hover ~ span {
     /* Adjust search bar input width for smaller screens */
     nav .search-container input[type="text"] {
         width: 150px;
+        position: fixed;
     }
 }

@@ -28,7 +28,6 @@
         });
     </script>
     <script>
-        // Function to load the nav.html content dynamically
         function loadNavBar() {
             fetch('nav.html')
                 .then(response => response.text())
@@ -38,7 +37,6 @@
                 .catch(error => console.error('Error loading the navigation bar:', error));
         }
 
-        // Load the nav bar when the page is ready
         window.onload = loadNavBar;
     </script>
 </body>

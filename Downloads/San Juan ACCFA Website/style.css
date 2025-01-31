@@ -36,7 +36,7 @@ header {
     user-select: none;
 }
 
-.navigation a {
+.nav a {
     position: relative;
     font-size: 1.1em;
     color: white;
@@ -45,7 +45,7 @@ header {
     margin-left: 40px;
 }
 
-.navigation a::after{
+.nav a::after{
     content: '';
     position: absolute;
     left: 0;
@@ -59,12 +59,12 @@ header {
     transition: transform .5s;
 }
 
-.navigation a:hover::after {
+.nav a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.navigation .btnLogin-popup {
+.nav .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -79,7 +79,7 @@ header {
     transition:.5s;
 }
 
-.navigation .btnLogin-popup:hover {
+.nav .btnLogin-popup:hover {
     background: white;
     color: darkblue; 
 }
@@ -197,17 +197,4 @@ header {
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
-}
-.arrow-back {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.arrow-back:hover {
-    color: lightblue;
 }

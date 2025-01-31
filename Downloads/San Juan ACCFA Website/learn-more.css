@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: none;
+}
+.body {
+    background-image: url(images/learn-morebackground.png);
+    width: 70%;
+    height: 50%;
+background-size: cover;
+background-position: center;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, #87CEEB, #AFEEEE);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    animation: navAnimation 5s ease infinite;
+    position: fixed;
+}
+
+@keyframes navAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav .logo {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+    transform: rotate(360deg);
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #F1F1F1;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+nav .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav .search-container input[type="text"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 1em;
+    width: 200px;
+    outline: none;
+    transition: width 0.3s ease;
+}
+
+nav .search-container input[type="text"]:focus {
+    width: 250px;
+}
+
+nav .search-container button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #4682B4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+nav .search-container button:hover {
+    background-color: #4169E1;
+}
+.Intro-section {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    display: flex;
+    color: white; /* Text color */
+    font-size: 2rem;
+    background-image: url(images/housesgreen.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 1248px;;
+    animation: scrollBackground 10s linear infinite;
+}
+    
+    @keyframes scrollBackground {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -100% 0;
+        }
+    }
+.title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #2C3E50; /* Darker color */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    text-align: start;
+}
+.subtitle {
+    font-size: 1.5rem;
+    color: #2980B9; /* Blue color */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-weight: 600; /* Thicker text */
+    text-align: start;
+
+}
+.description {
+    font-size: 1rem;
+    color: #003366; /* Dark blue color for readability */
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-weight: 400; /* Regular thickness */
+    line-height: 1.6; /* Improve readability with more line spacing */
+    text-align: start;
+
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+.socials {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Size of the circle */
+    height: 50px; /* Size of the circle */
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none; /* Removes underline */
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Facebook icon style */
+.social-icon:first-child {
+    background-color: #1877f2; /* Facebook blue */
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.7); /* Glow effect */
+}
+
+/* Email icon style */
+.social-icon:last-child {
+    background-color: #d44638; /* Gmail red */
+    box-shadow: 0 0 15px rgba(212, 70, 56, 0.7); /* Glow effect */
+}
+
+/* Hover effects */
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.9); /* Stronger glow on hover */
+}
+
+.social-icon:first-child:hover {
+    box-shadow: 0 0 20px rgba(24, 119, 242, 0.9); /* Facebook glow on hover */
+}
+
+.social-icon:last-child:hover {
+    box-shadow: 0 0 20px rgba(212, 70, 56, 0.9); /* Email glow on hover */
+}
+.About-us {
+    position: relative;
+    z-index: 2;
+    background: #fff; /* Ensure About Us has its own clean background */
+}
+.About-us h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.About-us h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #87CEEB; /* Blue color for the glow line */
+    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7); /* Glow effect */
+}
+.About-us h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+}
+.About-us h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #87CEEB; /* Blue color for the glow line */
+    box-shadow: 0 0 10px rgba(151, 210, 250, 0.7); /* Glow effect */
+}
+.About-us p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+.About-us {
+    padding: 50px 0;
+}
+.About-us h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2C3E50; /* Darker color for better contrast */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.About-us h2 {
+    font-size: 2rem;
+    color: #2980B9; /* Blue color for a more vibrant look */
+    margin-bottom: 15px; /* Add space below the subheading */
+}
+
+.About-us p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #555; /* Darker gray for better contrast */
+    margin-top: 20px;
+    line-height: 1.6; /* Improve readability with more line spacing */
+}
+.socials2 {
+    align-items: center;
+}
+.aboutus {
+    animation: rotateImage 10s linear infinite;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+}
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+}
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+}
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.testimonial:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.testimonials-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep cards in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling if cards overflow */
+    gap: 15px; /* Add spacing between cards */
+    padding-bottom: 20px; /* Add padding to accommodate scrollbar */
+}
+
+.testimonial-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey color with opacity */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Add a hover effect */
+}
+
+.testimonial-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
